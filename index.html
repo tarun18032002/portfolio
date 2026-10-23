@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tarunkumar — AI Engineer</title>
+<meta name="description" content="Tarunkumar — AI Engineer building production agentic and real-time voice AI systems: multi-agent orchestration, RAG, MCP tooling." />
+<meta property="og:title" content="Tarunkumar — AI Engineer" />
+<meta property="og:description" content="Production agentic & real-time voice AI. Multi-agent orchestration, RAG, MCP tooling." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d0d0d'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Helvetica,Arial' font-size='19' font-weight='bold' fill='%23f2f0ea'%3ET%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top">Tarun<span>.</span></a>
+  <p class="nav__tag">agentic systems &middot; real-time voice &middot; retrieval</p>
+  <nav class="nav__links">
+    <a href="#about">ABOUT</a>
+    <a href="#capabilities">WHAT I BUILD</a>
+    <a href="#experience">EXPERIENCE</a>
+    <a href="#work">PROJECTS</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<div class="drawer" id="drawer">
+  <a href="#about">ABOUT</a>
+  <a href="#capabilities">WHAT I BUILD</a>
+  <a href="#experience">EXPERIENCE</a>
+  <a href="#work">PROJECTS</a>
+  <a href="#contact">CONTACT</a>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <canvas class="hero__net" id="net" aria-hidden="true"></canvas>
+
+  <p class="hero__eyebrow reveal"><span class="dot"></span> AI ENGINEER &nbsp;&middot;&nbsp; BANGALORE, INDIA &nbsp;&middot;&nbsp; OPEN TO WORK</p>
+
+  <h1 class="hero__name" id="heroName">TARUN</h1>
+
+  <p class="hero__role" aria-live="polite">&gt; <span id="typed"></span><span class="caret">_</span></p>
+
+  <div class="hero__grid">
+    <div class="hero__left reveal">
+      <p class="hero__stat"><strong data-count="2" data-suffix="+">0</strong> Years Building AI in Production</p>
+      <p class="hero__copy">Conversational agents that run live &mdash; healthcare ordering, IT service desks, enterprise retrieval.</p>
+      <ul class="chips chips--sm">
+        <li>LangGraph</li><li>OpenAI Realtime</li><li>LlamaIndex</li><li>FastMCP</li>
+      </ul>
+    </div>
+
+    <figure class="photo" id="photo">
+      <!-- Drop your photo at assets/profile.jpg — the placeholder swaps out automatically -->
+      <img src="assets/profile.jpg" alt="Tarunkumar" id="photoImg" />
+    </figure>
+
+    <div class="hero__right reveal">
+      <p class="hero__copy">Hi, I&rsquo;m Tarunkumar &mdash; an AI Engineer at SoundHound AI. I build real-time, tool-calling voice agents and retrieval systems that hold up under production traffic, with guardrails that keep them honest.</p>
+      <div class="hero__cta">
+        <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">RESUME</a>
+        <a class="btn btn--ghost" href="#contact">GET IN TOUCH</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IMPACT ================= -->
+<section class="impact">
+  <div class="impact__item reveal"><strong data-count="400" data-suffix="+">0</strong><span>menu items searchable<br>by natural language</span></div>
+  <div class="impact__item reveal"><strong data-count="35" data-suffix="%">0</strong><span>retrieval precision gain<br>over keyword search</span></div>
+  <div class="impact__item reveal"><strong data-count="40" data-suffix="%">0</strong><span>lower response latency<br>after request batching</span></div>
+  <div class="impact__item reveal"><strong data-count="80" data-suffix="%">0</strong><span>of the team adopted<br>my MCP testing tool</span></div>
+</section>
+
+<!-- ================= STACK MARQUEE ================= -->
+<section class="band">
+  <p class="band__label">THE STACK I SHIP WITH</p>
+  <div class="marquee">
+    <div class="marquee__track" id="marqueeTrack">
+      <span>PYTHON</span><i>/</i><span>LANGGRAPH</span><i>/</i><span>LLAMAINDEX</span><i>/</i><span>OPENAI REALTIME</span><i>/</i>
+      <span>LIVEKIT</span><i>/</i><span>QDRANT</span><i>/</i><span>FASTAPI</span><i>/</i><span>MCP</span><i>/</i>
+      <span>LANGCHAIN</span><i>/</i><span>LANGSMITH</span><i>/</i><span>POSTGRESQL</span><i>/</i><span>DOCKER</span><i>/</i>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <p class="section__kicker reveal">ABOUT</p>
+  <div class="about">
+    <h2 class="about__title reveal">About<br>Me</h2>
+    <div class="about__body reveal">
+      <p>I&rsquo;m Tarunkumar, an AI Engineer in Bangalore. I work where language models stop being demos and start being systems: multi-agent orchestration, tool calling against real enterprise APIs, retrieval that has to return the right document, and guardrails that stop an agent doing the wrong thing to someone&rsquo;s order.</p>
+      <p>Right now at SoundHound AI I build real-time voice agents &mdash; a healthcare meal-ordering assistant that handles allergies and dietary limits mid-conversation, IT service desk agents that verify identity and reset credentials, help-desk agents grounded in a verified knowledge base. Before that I shipped RAG search and LangGraph automation at Redwoods.ai.</p>
+      <p>I like the unglamorous half of this work: evaluation, latency, failure modes, and the internal tooling that lets a team test agents without guessing.</p>
+    </div>
+  </div>
+
+  <div class="skills">
+    <div class="skills__group reveal">
+      <h3>GENERATIVE AI</h3>
+      <ul class="chips">
+        <li>LLMs</li><li>RAG</li><li>Agentic AI</li><li>Multi-Agent Orchestration</li><li>Function Calling</li>
+        <li>Prompt Engineering</li><li>LLM Evaluation</li><li>Guardrails</li><li>Embeddings</li><li>MCP</li>
+      </ul>
+    </div>
+    <div class="skills__group reveal">
+      <h3>FRAMEWORKS</h3>
+      <ul class="chips">
+        <li>LangChain</li><li>LangGraph</li><li>LlamaIndex</li><li>LangSmith</li><li>FastMCP</li><li>PyTorch</li><li>Scikit-learn</li>
+      </ul>
+    </div>
+    <div class="skills__group reveal">
+      <h3>VOICE AI</h3>
+      <ul class="chips">
+        <li>LiveKit</li><li>OpenAI Realtime</li><li>STT</li><li>TTS</li><li>Conversational AI</li><li>Barge-in Handling</li>
+      </ul>
+    </div>
+    <div class="skills__group reveal">
+      <h3>BACKEND &amp; CLOUD</h3>
+      <ul class="chips">
+        <li>Python</li><li>FastAPI</li><li>Flask</li><li>Asyncio</li><li>PostgreSQL</li><li>MySQL</li>
+        <li>Qdrant</li><li>Docker</li><li>AWS S3</li><li>Azure Blob</li><li>SQL</li><li>Groovy</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAPABILITIES ================= -->
+<section class="section section--dark" id="capabilities">
+  <p class="section__kicker reveal">WHAT I BUILD</p>
+  <div class="services">
+
+    <article class="service reveal">
+      <span class="service__no">01</span>
+      <h3>AGENTIC SYSTEMS</h3>
+      <p>Multi-agent orchestration with tool calling against live enterprise APIs &mdash; routing, state across turns, and escalation to a human when the agent should stop.</p>
+      <div class="viz viz--graph" aria-hidden="true">
+        <svg viewBox="0 0 220 90">
+          <line x1="30" y1="45" x2="110" y2="20"/><line x1="30" y1="45" x2="110" y2="70"/>
+          <line x1="110" y1="20" x2="190" y2="45"/><line x1="110" y1="70" x2="190" y2="45"/>
+          <line x1="110" y1="20" x2="110" y2="70"/>
+          <circle cx="30" cy="45" r="7"/><circle cx="110" cy="20" r="7"/>
+          <circle cx="110" cy="70" r="7"/><circle cx="190" cy="45" r="7"/>
+        </svg>
+      </div>
+    </article>
+
+    <article class="service reveal">
+      <span class="service__no">02</span>
+      <h3>REAL-TIME VOICE AI</h3>
+      <p>Low-latency speech agents on OpenAI Realtime and LiveKit: barge-in, English/Spanish switching, natural responses, and no surprise tool calls mid-sentence.</p>
+      <div class="viz viz--wave" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </article>
+
+    <article class="service reveal">
+      <span class="service__no">03</span>
+      <h3>RAG &amp; RETRIEVAL</h3>
+      <p>Ingestion, chunking and embedding pipelines into Qdrant, tuned for the context the model actually needs &mdash; measured, not assumed.</p>
+      <div class="viz viz--docs" aria-hidden="true">
+        <svg viewBox="0 0 220 90">
+          <rect x="18" y="18" width="40" height="54" rx="4"/>
+          <rect x="66" y="18" width="40" height="54" rx="4"/>
+          <path d="M112 45 H160"/>
+          <circle cx="182" cy="45" r="18"/>
+          <path d="M175 45 l5 6 l10 -13"/>
+        </svg>
+      </div>
+    </article>
+
+    <article class="service reveal">
+      <span class="service__no">04</span>
+      <h3>MCP &amp; DEV TOOLING</h3>
+      <p>FastMCP servers and internal tools that let a team run multi-turn tests, replay conversation history and validate workflows instead of guessing.</p>
+      <div class="viz viz--term" aria-hidden="true">
+        <code>&gt; mcp test --turns 12</code>
+        <code>&gt; 12/12 passed</code>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="section" id="experience">
+  <p class="section__kicker reveal">EXPERIENCE</p>
+
+  <ol class="timeline">
+    <li class="job reveal">
+      <div class="job__when">
+        <span class="job__date">FEB 2026 &mdash; PRESENT</span>
+        <span class="job__place">Bangalore, India</span>
+      </div>
+      <div class="job__what">
+        <h3>AI Engineer <em>&mdash; Conversational AI</em></h3>
+        <p class="job__org">SoundHound AI</p>
+        <ul>
+          <li><strong>Compass &mdash; real-time agentic voice AI:</strong> production healthcare voice agent on OpenAI Realtime with multi-agent orchestration and tool calling &mdash; natural-language search over 400+ menu items, dynamic customization, and stateful multi-turn meal ordering wired into enterprise APIs.</li>
+          <li><strong>Patient-aware guardrails:</strong> allergies, dietary restrictions, nutrients, availability, quantity limits and stateful tray updates, plus delivery status and cancellation.</li>
+          <li>Contextual recommendations, English/Spanish switching, natural speech responses, and safeguards against unintended tool calls or tray changes.</li>
+          <li><strong>Acentra &mdash; IT service desk:</strong> specialized agents for identity verification, Duo MFA, password resets, account unlocks, application-specific routing, case management, onboarding and human escalation.</li>
+          <li><strong>PCL &mdash; IT help desk:</strong> knowledge-base-grounded troubleshooting with verified article retrieval, step-by-step assistance, ticket creation and escalation workflows.</li>
+          <li><strong>MCP developer tooling:</strong> FastMCP-based Amelia integration and testing tool adopted by ~80% of the team for multi-turn tests, conversation-history review, workflow validation and escalation tracking.</li>
+          <li><strong>Audio automation:</strong> Python pipelines that bulk-download call recordings from CSV/Excel inputs and feed audio classification and call-quality analysis in an internal dashboard.</li>
+        </ul>
+        <ul class="chips chips--sm">
+          <li>OpenAI Realtime</li><li>Multi-Agent</li><li>FastMCP</li><li>Guardrails</li><li>Python</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="job reveal">
+      <div class="job__when">
+        <span class="job__date">FEB 2025 &mdash; SEP 2025</span>
+        <span class="job__place">Hyderabad, India</span>
+      </div>
+      <div class="job__what">
+        <h3>AI/ML Engineer</h3>
+        <p class="job__org">Redwoods.ai</p>
+        <ul>
+          <li>Designed and deployed a production RAG search system with LlamaIndex, embeddings and Qdrant &mdash; 35% better retrieval precision than keyword search.</li>
+          <li>Built asynchronous ingestion, chunking and embedding pipelines for large enterprise files; tuned retrieval context and token use for LLM queries.</li>
+          <li>Built LangGraph agents combining web search, retrieval and backend actions; automated supplier onboarding with ESG report analysis, FAQ generation and website data extraction.</li>
+          <li>Cut response latency 40% through request batching and parallel processing; contributed to model evaluation and production delivery.</li>
+        </ul>
+        <ul class="chips chips--sm">
+          <li>LlamaIndex</li><li>Qdrant</li><li>LangGraph</li><li>RAG</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="job reveal">
+      <div class="job__when">
+        <span class="job__date">JUL 2024 &mdash; DEC 2024</span>
+        <span class="job__place">Pune, India</span>
+      </div>
+      <div class="job__what">
+        <h3>Python Developer</h3>
+        <p class="job__org">ITMTB Technologies Pvt. Ltd.</p>
+        <ul>
+          <li>Built Python data migration and synchronization pipelines integrating Shopify and Myntra product data through Increff and Clickpost APIs.</li>
+          <li>Implemented LLM-assisted product creation and SEO content workflows, cutting manual effort by 80%.</li>
+        </ul>
+        <ul class="chips chips--sm">
+          <li>Python</li><li>REST APIs</li><li>LLM Workflows</li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section section--dark" id="work">
+  <p class="section__kicker reveal">PROJECTS</p>
+  <div class="projects">
+
+    <article class="project reveal">
+      <div class="project__meta"><span>FULL-STACK RAG SDK</span><span>FASTAPI, REACT, POSTGRES, DOCKER</span></div>
+      <h3>BOTLATTICE</h3>
+      <p>Configurable end-to-end RAG platform &mdash; document ingestion, chunking, embeddings, vector-store integration and retrieval workflows, with PostgreSQL state management, auth, WebSocket streaming and Docker deployment.</p>
+      <!-- Set your repo URL -->
+      <a href="#" target="_blank" rel="noopener">GITHUB &rarr;</a>
+    </article>
+
+    <article class="project reveal">
+      <div class="project__meta"><span>REAL-TIME VOICE</span><span>LIVEKIT, LANGGRAPH, OPENAI REALTIME</span></div>
+      <h3>AI VOICE TUTOR</h3>
+      <p>Interactive voice tutor with RAG retrieval for personalized, context-aware multi-turn learning &mdash; asynchronous audio processing, barge-in handling and retrieval-backed replies that keep the conversation continuous.</p>
+      <a href="#" target="_blank" rel="noopener">GITHUB &rarr;</a>
+    </article>
+
+    <article class="project reveal">
+      <div class="project__meta"><span>AI AGENT</span><span>LLAMAINDEX, OPENAI EMBEDDINGS</span></div>
+      <h3>SKILLSYNC</h3>
+      <p>Resume-to-job matching agent that compares candidate profiles with job descriptions, estimates fit scores, and returns skill-gap insights and role-specific suggestions.</p>
+      <a href="#" target="_blank" rel="noopener">LIVE DEMO &rarr;</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= EDUCATION & CERTS ================= -->
+<section class="section" id="credentials">
+  <p class="section__kicker reveal">EDUCATION &amp; CERTIFICATIONS</p>
+  <div class="cards">
+    <article class="card card--edu reveal">
+      <p class="card__text">Bachelor of Engineering, Computer Science and Engineering &mdash; CGPA 8.33.</p>
+      <h4>B.E. COMPUTER SCIENCE</h4>
+      <span>Dr. AIT, Bangalore &middot; 2020&ndash;2024</span>
+    </article>
+    <article class="card reveal">
+      <p class="card__text">Graph-based agent design: state machines, cycles, tool nodes and controllable multi-agent flows.</p>
+      <h4>LANGGRAPH</h4>
+      <span>IBM</span>
+    </article>
+    <article class="card reveal">
+      <p class="card__text">Core machine learning &mdash; supervised models, evaluation and practical deployment considerations.</p>
+      <h4>MACHINE LEARNING</h4>
+      <span>Coursera</span>
+    </article>
+    <article class="card reveal">
+      <p class="card__text">Building LLM applications: chains, memory, retrieval and tool integration.</p>
+      <h4>LANGCHAIN</h4>
+      <span>DeepLearning.AI</span>
+    </article>
+    <article class="card reveal">
+      <p class="card__text">Advanced learning algorithms &mdash; neural networks, decision trees and model tuning.</p>
+      <h4>ADVANCED LEARNING ALGORITHMS</h4>
+      <span>Stanford</span>
+    </article>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <p class="section__kicker reveal">CONTACT ME</p>
+  <div class="contact">
+    <div class="contact__info reveal">
+      <div><p class="contact__label">LOCATION</p><p>Bangalore, India</p></div>
+      <div><p class="contact__label">EMAIL ME</p><p><a href="mailto:basapathitarunkumar9686@gmail.com">basapathitarunkumar9686@gmail.com</a></p></div>
+      <div><p class="contact__label">PHONE</p><p><a href="tel:+918147630741">+91 81476 30741</a></p></div>
+      <div><p class="contact__label">SOCIALS</p>
+        <p class="contact__socials">
+          <!-- Set your profile URLs -->
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </div>
+
+    <!--
+      Web3Forms: get a free access key at https://web3forms.com (enter your email, no account needed)
+      and paste it into the access_key value below. Until then the form falls back to opening
+      the visitor's mail app.
+    -->
+    <form class="contact__form reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" id="accessKey" value="21f2251a-bea1-46da-bdf7-0632b1fc83c6" />
+      <input type="hidden" name="from_name" value="Portfolio — tarun.dev" />
+
+      <label>FULL NAME<input type="text" name="name" required /></label>
+      <label>EMAIL ADDRESS<input type="email" name="email" required /></label>
+      <label>SUBJECT<input type="text" name="subject" /></label>
+      <label>YOUR MESSAGE<textarea name="message" rows="4" required></textarea></label>
+
+      <!-- honeypot: bots fill this, humans never see it -->
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+      <button type="submit" class="btn btn--wide" id="formSubmit">Send Me Message</button>
+      <p class="form__note" id="formNote" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p class="footer__kicker">Building something that talks back?</p>
+  <a class="footer__cta" href="mailto:basapathitarunkumar9686@gmail.com">HIRE ME!</a>
+  <p class="footer__small">&copy; <span id="year"></span> Tarunkumar &middot; Bangalore, India</p>
+</footer>
+
+<a class="totop" href="#top" aria-label="Back to top">&uarr;</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
